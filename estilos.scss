@@ -38,11 +38,11 @@ body {
 .start{
     text-align: center;
     // text-shadow:  3px 3px 5px #4DA167;
-    -webkit-text-stroke: 2px #235789;
-    color: cyan;
+    -webkit-text-stroke: 2px black;
+    color: red;
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-size: 8rem;
+    font-size: 6rem;
 }
 
 .card{
@@ -53,8 +53,12 @@ body {
     box-shadow: 4px 4px 4px rgba(0,0,0, 0.7);
 
     &-header{
+        // width: 100%;
         width: 100%;
+        height: 120px;
         display: block;
+        border-bottom: 15px solid black;
+        margin: 0;
     }
 
     &-body{
@@ -64,9 +68,11 @@ body {
         border-bottom: 1px solid var(--dark-gray);
 
         &-img{
+            width: 150px;
+            height: 150px;
             border: 5px solid white;
             border-radius: 50%;
-            margin-top: calc(-48px - 5px);
+            margin-top: calc(-75px - 5px);
             background-color: white;
             // object-fit: cover;
         }
@@ -74,7 +80,7 @@ body {
         &-title{
             margin-top: 2rem;
             font-size: 1.8rem;
-            
+            text-transform: capitalize;
             span{
                 color: var(--dark-gray);
                 font-size: 400;
@@ -94,6 +100,7 @@ body {
     &-footer{
         display: flex;
         justify-content: space-around;
+        background-color: rgb(173, 172, 172);
 
 
         &-social{
